@@ -14,6 +14,10 @@
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "declarationDir": "types",
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "baseUrl": "./",
+    "paths": {
+      "@element-plus-react/*": ["packages/*"],
+    }
   }
 }

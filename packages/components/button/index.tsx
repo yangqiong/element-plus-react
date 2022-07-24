@@ -1,8 +1,8 @@
 import React from "react";
-import "./button.css";
+import { useNamespace } from "@element-plus-react/hooks";
 
 interface ButtonProps {
-  type?: "primary" | "success" | "warning" | "danger" | "info";
+  type?: "default" | "primary" | "success" | "warning" | "danger" | "info";
   /**
    * Button contents
    */
@@ -17,8 +17,9 @@ interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button = ({ type, label, ...props }: ButtonProps) => {
+  const ns = useNamespace("button");
   return (
-    <button type="button" className="el-button el-button--primary" {...props}>
+    <button type="button" className={`el-button ${ns.m(type)}`} {...props}>
       <span>{label}</span>
     </button>
   );
