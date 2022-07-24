@@ -16,6 +16,7 @@ export const ButtonBase = (args) => {
 
   const plains = types.map((type) => ({ ...type, plain: true }));
   const rounds = types.map((type) => ({ ...type, round: true }));
+  const circles = types.map((type) => ({ ...type, circle: true, label: "00" }));
 
   return (
     <div>
@@ -36,13 +37,19 @@ export const ButtonBase = (args) => {
           <Button key={args.label} {...args}></Button>
         ))}
       </div>
+      <p></p>
+      <div>
+        {circles.map((args) => (
+          <Button key={args.label} {...args}></Button>
+        ))}
+      </div>
     </div>
   );
 };
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Example/Button/ButtonBase",
+  title: "Element-Plus-React/Button/ButtonBase",
   component: ButtonBase,
 } as ComponentMeta<typeof ButtonBase>;
 

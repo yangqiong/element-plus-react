@@ -5,12 +5,13 @@ import { Button } from "../packages/components/button";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Example/Button/Button",
+  title: "Element-Plus-React/Button/Button",
   component: Button,
   args: {
     type: "default",
     plain: false,
     round: false,
+    circle: false,
     label: "Default",
   },
 } as ComponentMeta<typeof Button>;
@@ -23,5 +24,6 @@ Default.args = {
   type: "default",
   plain: false,
   round: false,
+  circle: false,
   label: "Default",
 };

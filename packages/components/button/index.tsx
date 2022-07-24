@@ -5,6 +5,7 @@ interface ButtonProps {
   type?: "default" | "primary" | "success" | "warning" | "danger" | "info";
   plain?: boolean;
   round?: boolean;
+  circle?: boolean;
   /**
    * Button contents
    */
@@ -22,6 +23,7 @@ export const Button = ({
   type,
   plain,
   round,
+  circle,
   label,
   ...props
 }: ButtonProps) => {
@@ -30,7 +32,8 @@ export const Button = ({
   const className = `el-button 
   ${ns.m(type)} 
   ${ns.is("plain", plain)} 
-  ${ns.is("round", round)}`;
+  ${ns.is("round", round)}
+  ${ns.is("circle", circle)}`;
 
   return (
     <button type="button" className={className} {...props}>
