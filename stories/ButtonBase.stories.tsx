@@ -1,6 +1,5 @@
 import React from "react";
 import { ComponentMeta } from "@storybook/react";
-
 import { Button } from "../packages/components/button";
 
 export const ButtonBase = (args) => {
@@ -47,13 +46,7 @@ export const ButtonBase = (args) => {
   );
 };
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Element-Plus-React/Button/ButtonBase",
+  title: "Basic/Button/ButtonBase",
   component: ButtonBase,
 } as ComponentMeta<typeof ButtonBase>;
-
-// // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-// const Template: ComponentStory<typeof ButtonBase> = (args) => <ButtonBase />;
-
-// export const Primary = Template.bind({});
