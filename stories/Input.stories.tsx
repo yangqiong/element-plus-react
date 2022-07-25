@@ -7,6 +7,7 @@ export default {
   component: Input,
   args: {
     placeholder: "Please input",
+    disabled: false,
   },
 } as ComponentMeta<typeof Input>;
 
@@ -15,4 +16,5 @@ const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   placeholder: "Please input",
+  disabled: false,
 };
