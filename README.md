@@ -1,4 +1,4 @@
-在线示例（StroyBook）：https://www.chromatic.com/library?appId=62dd572d983a98740d32ec18&groupPrefix=Element-Plus-React
+[在线示例](https://www.chromatic.com/library?appId=62dd572d983a98740d32ec18) (点击右侧 **View Storybook**)
 
 ## 组件
 
